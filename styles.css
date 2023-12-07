@@ -1,0 +1,144 @@
+/* General Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('./image/walpaper.jpg'); /* Add your background image */
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1); /* Transparent background with blur effect */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Navbar Styles with Glassmorphism Effect */
+/* Navbar Styles */
+.navbar {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background with blur effect */
+    backdrop-filter: blur(10px); /* Add a blur effect to the background */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: background-color 0.3s, backdrop-filter 0.3s;
+}
+.logo {
+    max-width: 100px; /* Adjust the width of your logo */
+    height: auto;
+    margin-right: 20px; /* Add margin to separate the logo from navigation items */
+}
+
+.navbar-brand {
+    color: #000;
+    font-size: 24px;
+    transition: transform 0.2s;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05);
+}
+
+.navbar-nav .nav-link {
+    color: 000; /* Change the text color for readability */
+    transition: transform 0.2s;
+}
+
+.navbar-nav .nav-link:hover {
+    transform: scale(1.05);
+}
+
+/* Search Form Styles */
+form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#city {
+    background: rgba(255, 255, 255, 0.4); /* Semi-transparent input background */
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#city:focus {
+    background: rgba(255, 255, 255, 0.6); /* Slightly darker on focus */
+}
+
+#submit {
+    background: rgba(0, 123, 255, 0.9); /* Transparent button background */
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#submit:hover {
+    background: rgba(0, 123, 255, 1); /* Slightly darker on hover */
+    transform: scale(1.05);
+}
+
+/* Card Styles with Glassmorphism Effect */
+
+.card {
+    background: rgba(255, 255, 255, 0.1); /* Transparent background with blur effect */
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card-header {
+    background: rgba(0, 123, 255, 0.7); /* Semi-transparent header background */
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.card-body {
+    background: rgba(255, 255, 255, 0.2); /* Transparent body background */
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
+    .container {
+        margin-top: 10px;
+    }
+
+    .card-title {
+        font-size: 24px;
+    }
+}
